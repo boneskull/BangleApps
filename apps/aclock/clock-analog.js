@@ -31,8 +31,9 @@
   
   function drawAll() {
     g.clear();
+    g.drawImage(require("Storage").read("*bg"));
     secondDate = minuteDate = new Date();
-    // draw hands first
+// draw hands first
     onMinute();
     // draw seconds
     g.setColor(0,0,0.6);
